@@ -1,3 +1,13 @@
+## Install
+
+Add in your `init.el`.
+
+```elisp
+(use-package org-share-to-web
+  :straight (:host github :repo "tanrax/org-share-to-web.el" :files ("org-share-to-web.el"))
+  :ensure t)
+```
+
 ## Configure
 
 Configure the domain to be used to access the file share and the directory where it will be hosted using Tramp.
