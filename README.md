@@ -23,3 +23,9 @@ Example.
 (setq org-share-to-web-domain "https://mydomain.com/")
 (setq org-share-to-web-directory "/ssh:debian@mydomain.com:~/www/")
 ```
+
+## Run
+
+Open an Org file and run `org-share-to-web-buffer`.
+
+It will copy the URL to your clipboard to open the document share.

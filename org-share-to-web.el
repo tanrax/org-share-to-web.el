@@ -23,7 +23,8 @@
 	 (export-html (org-export-string-as (buffer-string) 'html)))
     (write-region export-html nil (concat org-share-to-web-directory filename-html))
     (tramp-cleanup-all-connections)
-    (kill-new (concat org-share-to-web-domain filename-html))))
+    (kill-new (concat org-share-to-web-domain filename-html)))
+  (message "Org shared online. URL copied to clipboard!"))
 
 (provide 'org-share-to-web)
 
