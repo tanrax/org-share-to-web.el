@@ -7,7 +7,7 @@
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
 ;;; Commentary:
-;;
+;; Share a Org document in an HTML document accessible online.
 
 ;;; Code:
 
