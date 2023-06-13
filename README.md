@@ -35,7 +35,7 @@ It will copy the URL to your clipboard to open the document share.
 If you want it to look really nice, include the following lines at the beginning of your Org documents.
 
 ```org
-#+html_head: <link rel="stylesheet" href="https://sandyuraz.com/styles/org.css">
+#+html_head: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tanrax/org-share-to-web.el/themes/light.css">
 #+OPTIONS: toc:nil
 #+OPTIONS: html-postamble:nil
 ```
