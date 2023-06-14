@@ -26,6 +26,11 @@
     (kill-new (concat org-share-to-web-domain filename-html)))
   (message "Org shared online. URL copied to clipboard!"))
 
+(defun org-share-to-web-dired ()
+  "Open directory where org files are shared."
+  (interactive)
+  (dired org-share-to-web-directory))
+
 (provide 'org-share-to-web)
 
 ;;; org-share-to-web.el ends here

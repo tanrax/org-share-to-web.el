@@ -30,6 +30,8 @@ Open an Org file and run `org-share-to-web-buffer`.
 
 It will copy the URL to your clipboard to open the document share.
 
+If you need to manage the shared files, such as deleting them, use `org-share-to-web-dired`.
+
 ## Theme
 
 If you want it to look really nice, include the following lines at the beginning of your Org documents.
