@@ -38,6 +38,6 @@ If you want it to look really nice, include the following lines at the beginning
 
 ```org
 #+html_head: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tanrax/org-share-to-web.el/themes/light.css">
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil num:nil
 #+OPTIONS: html-postamble:nil
 ```
