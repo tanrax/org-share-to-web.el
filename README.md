@@ -1,3 +1,11 @@
+Share an Org buffer as a web page. In addition, a URL will be created that you can share to view it.
+
+## Requirements
+
+- Domain.
+- Hosting.
+- TRAMP.
+
 ## Install
 
 Add in your `init.el`.
