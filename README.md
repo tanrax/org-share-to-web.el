@@ -1,10 +1,12 @@
 Share an Org buffer as a web page. In addition, a URL will be created that you can share to view it.
 
+![Demo](demo.gif)
+
 ## Requirements
 
-- Domain.
-- Hosting.
-- TRAMP.
+- **Domain**: To access the file share.
+- **Hosting**: To host the file share. It is recommended to use a server with SSH access.
+- **TRAMP**: To access the hosting.
 
 ## Install
 
@@ -18,19 +20,20 @@ Add in your `init.el`.
 
 ## Configure
 
-Configure the domain to be used to access the file share and the directory where it will be hosted using Tramp.
+Configure the domain to be used to access the file share and the directory where it will be hosted using TRAMP.
 
 ```elisp
-(setq org-share-to-web-domain "")
-(setq org-share-to-web-directory "")
+(setq org-share-to-web-domain "") ; Domain
+(setq org-share-to-web-directory "") ; TRAMP path
 ```
-
 Example.
 
 ```elisp
 (setq org-share-to-web-domain "https://mydomain.com/")
 (setq org-share-to-web-directory "/ssh:debian@mydomain.com:~/www/")
 ```
+
+The domain must end with `/`. The directory must end with `/` and start with `/ssh:` or another TRAMP method.
 
 ## Run
 
