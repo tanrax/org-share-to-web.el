@@ -17,7 +17,7 @@
 (defun org-share-to-web-buffer ()
   "Share the current org file to the server, export to html and copy URL to clipboard."
   (interactive)
-  (let* ((filename-current-buffer (file-name-nondirectory (buffer-file-name)))
+  (let* ((filename-current-buffer (buffer-name))
 	 (filename-sans-extension (file-name-sans-extension filename-current-buffer))
 	 (filename-html (concat filename-sans-extension ".html"))
 	 (export-html (org-export-string-as (buffer-string) 'html)))
