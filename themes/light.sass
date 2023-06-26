@@ -2,6 +2,7 @@
 $color-bg: #fffff5
 $color-text: #000
 $color-text--light: lighten($color-text, 20%)
+$color-link: #3297d3
 $color-selection: #a4aeb6
 $gap-l: 2.5rem
 $gap-m: 1rem
@@ -24,7 +25,7 @@ body
 
 .timestamp
   color: $color-text--light
-  
+
 /* ---------------------------------------------------
 /* Make a nice input form with rounded corners and hover
  *animations
@@ -98,34 +99,15 @@ h1, h2, h3
   font-family: "Lora"
 
 img
-  width: 500px
-  max-width: 100%
-  border-radius: 10px
-  text-align: center
-
-/* ---------------------------------------------
-/* Bold hover animations on links and clickables
-/* ---------------------------------------------
+  display: block
+  width: 100%
+  object-fit: cover
+  object-position: center
 
 a
-  cursor: pointer
-  color: #217ab7
-  line-height: inherit
-  transition: .14s
-
+  color: $color-link
   &:hover
-    color: white
-    background-color: #3297d3
-
-  &:visited
-    color: #43458b
-    border-color: #43458b
-
-    &:hover
-      color: white
-      background-color: #9251ac
+    text-decoration: none
 
 pre
   font-family: "Inconsolata", monospace
-
-
