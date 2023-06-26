@@ -98,32 +98,17 @@ h1, h2, h3 {
 }
 
 img {
-  width: 500px;
-  max-width: 100%;
-  border-radius: 10px;
-  text-align: center;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* --------------------------------------------- */
-/* Bold hover animations on links and clickables */
-/* --------------------------------------------- */
 a {
-  cursor: pointer;
-  color: #217ab7;
-  line-height: inherit;
-  transition: 0.14s;
+  color: #3297d3;
 }
 a:hover {
-  color: white;
-  background-color: #3297d3;
-}
-a:visited {
-  color: #43458b;
-  border-color: #43458b;
-}
-a:visited:hover {
-  color: white;
-  background-color: #9251ac;
+  text-decoration: none;
 }
 
 pre {
