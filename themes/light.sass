@@ -1,25 +1,30 @@
 
-\:root
-  --color-bg:#fffff5
-  --color-text:#000
-  --gap-l:2.5rem
+$color-bg: #fffff5
+$color-text: #000
+$color-text--light: lighten($color-text, 20%)
+$color-selection: #a4aeb6
+$gap-l: 2.5rem
+$gap-m: 1rem
 
 body
-  margin: var(--gap-l) auto
-  max-width: 610px
+  margin: $gap-l auto
+  max-width: 700px
   line-height: 1.6
-  background: var(--color-bg)
-  color: var(--color-text)
-  padding: 0 10px
+  background: $color-bg
+  color: $color-text
+  padding-inline: $gap-m
   line-height: 28px
   font-family: "Lora"
   font-weight: 500
   box-sizing: border-box
+  font-display: swap
+  &::selection
+    color: $color-bg
+    background: $color-selection
 
-  /* Smooth the font a little bit, it's a
-   *bit too bold on retina screens
-  -webkit-font-smoothing: antialiased
-
+.timestamp
+  color: $color-text--light
+  
 /* ---------------------------------------------------
 /* Make a nice input form with rounded corners and hover
  *animations
@@ -34,7 +39,6 @@ input
   background: #fffff4
   color: #3a1616
   font-size: 16px
-  -webkit-transition: 0.5s
   transition: 0.5s
   outline: none
 
@@ -124,6 +128,4 @@ a
 pre
   font-family: "Inconsolata", monospace
 
-\::selection
-  color: white
-  background: #ff4081
+
