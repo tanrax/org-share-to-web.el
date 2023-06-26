@@ -47,7 +47,11 @@ If you need to manage the shared files, such as deleting them, use `org-share-to
 
 If you want it to look really nice, include the following lines at the beginning of your Org documents.
 
+### Light
+
 ```org
+#+html_head: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap">
+#+html_head: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap">
 #+html_head: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tanrax/org-share-to-web.el/themes/light.css">
 #+OPTIONS: toc:nil num:nil
 #+OPTIONS: html-postamble:nil
