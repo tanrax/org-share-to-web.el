@@ -40,5 +40,5 @@ jobs:
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add themes/light.css themes/dark.css
-          git commit am "updated on - $(date)"
+          git commit -m "updated on - $(date)"
           git push origin main
