@@ -6,12 +6,7 @@ body {
   padding-inline: 1rem;
   font-family: "Lora", sans-serif;
   font-weight: 500;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-body::-moz-selection {
-  color: #fffff5;
-  background: #4D5460;
+  box-sizing: border-box;
 }
 body::selection {
   color: #fffff5;
@@ -27,10 +22,8 @@ h1, h2, h3 {
 img {
   display: block;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 a {
@@ -47,3 +40,5 @@ pre {
 .timestamp {
   color: #333333;
 }
+
+/*# sourceMappingURL=light.css.map */
