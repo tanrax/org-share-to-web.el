@@ -1,11 +1,6 @@
-$font-main: "Lora", sans-serif
-$font-monospace: "Inconsolata", monospace
-$color-bg: #fffff5
-$color-text: #000
-$color-text--light: lighten($color-text, 20%)
-$color-link: #195880
-$color-selection: #4D5460
-$gap-l: 2.5rem
-$gap-m: 1rem
-
-@use "base"
+@use 'base' with (
+  $color-bg: #fffff5
+  $color-text: #000
+  $color-link: #195880
+  $color-selection: #4D5460
+)
