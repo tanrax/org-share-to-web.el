@@ -33,6 +33,7 @@ jobs:
       - name: Compile SASS
         run: |
           sass themes/light.sass themes/light.css
+          sass themes/dark.sass themes/dark.css
           
       - name: Push files
         run: |          
