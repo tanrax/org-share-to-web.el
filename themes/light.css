@@ -6,8 +6,12 @@ body {
   padding-inline: 1rem;
   font-family: "Lora", sans-serif;
   font-weight: 500;
-  box-sizing: border-box;
-  font-display: swap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body::-moz-selection {
+  color: #fffff5;
+  background: #4D5460;
 }
 body::selection {
   color: #fffff5;
@@ -23,8 +27,10 @@ h1, h2, h3 {
 img {
   display: block;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 a {
@@ -36,37 +42,8 @@ a:hover {
 
 pre {
   font-family: "Inconsolata", monospace;
-  font-display: swap;
-}
-
-.isa_info, .isa_success, .isa_warning, .isa_error {
-  width: 90%;
-  margin: 10px 0px;
-  padding: 12px;
-}
-
-.isa_info {
-  color: #00529b;
-  background-color: #bde5f8;
-}
-
-.isa_success {
-  color: #4f8a10;
-  background-color: #dff2bf;
-}
-
-.isa_warning {
-  color: #9f6000;
-  background-color: #feefb3;
-}
-
-.isa_error {
-  color: #d8000c;
-  background-color: #ffd2d2;
 }
 
 .timestamp {
   color: #333333;
 }
-
-/*# sourceMappingURL=light.css.map */
