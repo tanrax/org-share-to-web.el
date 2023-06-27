@@ -1,1 +1,7 @@
-@use 'base' with ($color-bg: #fffff5, $color-text: #000, $color-link: #195880, $color-selection: #4D5460)
+$color-bg: #fffff5
+$color-text: #000
+$color-text--light: lighten($color-text, 20%)
+$color-link: #195880
+$color-selection: #4D5460
+
+@use 'base' with ($color-bg: $color-bg, $color-text: $color-text, $color-text--light: $color-text--light, $color-link: $color-link, $color-selection: $color-selection)
