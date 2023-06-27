@@ -1,0 +1,44 @@
+body {
+  margin: 2.5rem auto;
+  max-width: 700px;
+  background: #191919;
+  color: rgba(255, 255, 255, 0.8117647059);
+  padding-inline: 1rem;
+  font-family: "Lora", sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+body::selection {
+  color: #191919;
+  background: #9BA6B0;
+}
+
+h1, h2, h3 {
+  font-family: "Lora", sans-serif;
+  margin-top: 2.5rem;
+  line-height: 1.2;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+a {
+  color: #6FB0E2;
+}
+a:hover {
+  text-decoration: none;
+}
+
+pre {
+  font-family: "Inconsolata", monospace;
+}
+
+.timestamp {
+  color: rgba(255, 255, 255, 0.8117647059);
+}
+
+/*# sourceMappingURL=dark.css.map */
