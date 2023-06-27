@@ -1,0 +1,56 @@
+body
+  margin: $gap-l auto
+  max-width: 700px
+  background: $color-bg
+  color: $color-text
+  padding-inline: $gap-m
+  font-family: $font-main
+  font-weight: 500
+  box-sizing: border-box
+  &::selection
+    color: $color-bg
+    background: $color-selection
+
+
+h1, h2, h3
+  font-family: $font-main,
+  margin-top: $gap-l
+  line-height: 1.2
+
+img
+  display: block
+  width: 100%
+  object-fit: cover
+  object-position: center
+
+a
+  color: $color-link
+  &:hover
+    text-decoration: none
+
+pre
+  font-family: $font-monospace
+
+.isa_info, .isa_success, .isa_warning, .isa_error
+  width: 90%
+  margin: 10px 0px
+  padding: 12px
+
+.isa_info
+  color: #00529b
+  background-color: #bde5f8
+
+.isa_success
+  color: #4f8a10
+  background-color: #dff2bf
+
+.isa_warning
+  color: #9f6000
+  background-color: #feefb3
+
+.isa_error
+  color: #d8000c
+  background-color: #ffd2d2
+
+.timestamp
+  color: $color-text--light
