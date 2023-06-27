@@ -1,21 +1,20 @@
-
+$font-main: "Lora", sans-serif
+$font-monospace: "Inconsolata", monospace
 $color-bg: #fffff5
 $color-text: #000
 $color-text--light: lighten($color-text, 20%)
-$color-link: #3297d3
-$color-selection: #a4aeb6
+$color-link: #195880
+$color-selection: #4D5460
 $gap-l: 2.5rem
 $gap-m: 1rem
 
 body
   margin: $gap-l auto
   max-width: 700px
-  line-height: 1.6
   background: $color-bg
   color: $color-text
   padding-inline: $gap-m
-  line-height: 28px
-  font-family: "Lora"
+  font-family: $font-main
   font-weight: 500
   box-sizing: border-box
   font-display: swap
@@ -23,55 +22,26 @@ body
     color: $color-bg
     background: $color-selection
 
-.timestamp
-  color: $color-text--light
 
-/* ---------------------------------------------------
-/* Make a nice input form with rounded corners and hover
- *animations
-/* ---------------------------------------------------
+h1, h2, h3
+  font-family: $font-main,
+  margin-top: $gap-l
+  line-height: 1.2
 
-input
-  padding: 10px 16px
-  margin: 2px 0
-  box-sizing: border-box
-  border: 2px solid #dabebe
-  border-radius: 6px
-  background: #fffff4
-  color: #3a1616
-  font-size: 16px
-  transition: 0.5s
-  outline: none
+img
+  display: block
+  width: 100%
+  object-fit: cover
+  object-position: center
 
-  &:focus
-    border: 2px solid #3a1616
-
-/* ---------------------------------------
-/* The button is very similar to the input
-/* ---------------------------------------
-
-.button
-  background-color: #fffff4
-  border: none
-  color: black
-  padding: 6px 14px
-  text-align: center
-  text-decoration: none
-  display: inline-block
-  font-size: 16px
-  margin: 4px 2px
-  transition-duration: 0.4s
-  cursor: pointer
-  border: 2px solid #3a1616
-  border-radius: 6px
-
+a
+  color: $color-link
   &:hover
-    background-color: #3a1616
-    color: white
+    text-decoration: none
 
-/* -----------------------------------------------
-/* Various classes for messages of different kinds
-/* -----------------------------------------------
+pre
+  font-family: $font-monospace
+  font-display: swap
 
 .isa_info, .isa_success, .isa_warning, .isa_error
   width: 90%
@@ -94,20 +64,5 @@ input
   color: #d8000c
   background-color: #ffd2d2
 
-h1, h2, h3
-  line-height: 1.2
-  font-family: "Lora"
-
-img
-  display: block
-  width: 100%
-  object-fit: cover
-  object-position: center
-
-a
-  color: $color-link
-  &:hover
-    text-decoration: none
-
-pre
-  font-family: "Inconsolata", monospace
+.timestamp
+  color: $color-text--light
