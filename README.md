@@ -56,3 +56,13 @@ If you want it to look really nice, include the following lines at the beginning
 #+OPTIONS: toc:nil num:nil
 #+OPTIONS: html-postamble:nil
 ```
+
+### Dark
+
+```org
+#+html_head: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap">
+#+html_head: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap">
+#+html_head: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tanrax/org-share-to-web.el@main/themes/dark.css">
+#+OPTIONS: toc:nil num:nil
+#+OPTIONS: html-postamble:nil
+```
