@@ -1,71 +1,44 @@
 body {
   margin: 2.5rem auto;
   max-width: 700px;
-  line-height: 1.6;
   background: #fffff5;
   color: #000;
   padding-inline: 1rem;
-  line-height: 28px;
-  font-family: "Lora";
+  font-family: "Lora", sans-serif;
   font-weight: 500;
   box-sizing: border-box;
   font-display: swap;
 }
 body::selection {
   color: #fffff5;
-  background: #a4aeb6;
+  background: #4D5460;
 }
 
-.timestamp {
-  color: #333333;
+h1, h2, h3 {
+  font-family: "Lora", sans-serif;
+  margin-top: 2.5rem;
+  line-height: 1.2;
 }
 
-/* --------------------------------------------------- */
-/* Make a nice input form with rounded corners and hover
- * *animations */
-/* --------------------------------------------------- */
-input {
-  padding: 10px 16px;
-  margin: 2px 0;
-  box-sizing: border-box;
-  border: 2px solid #dabebe;
-  border-radius: 6px;
-  background: #fffff4;
-  color: #3a1616;
-  font-size: 16px;
-  transition: 0.5s;
-  outline: none;
-}
-input:focus {
-  border: 2px solid #3a1616;
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* --------------------------------------- */
-/* The button is very similar to the input */
-/* --------------------------------------- */
-.button {
-  background-color: #fffff4;
-  border: none;
-  color: black;
-  padding: 6px 14px;
-  text-align: center;
+a {
+  color: #195880;
+}
+a:hover {
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border: 2px solid #3a1616;
-  border-radius: 6px;
-}
-.button:hover {
-  background-color: #3a1616;
-  color: white;
 }
 
-/* ----------------------------------------------- */
-/* Various classes for messages of different kinds */
-/* ----------------------------------------------- */
+pre {
+  font-family: "Inconsolata", monospace;
+  font-display: swap;
+}
+
 .isa_info, .isa_success, .isa_warning, .isa_error {
   width: 90%;
   margin: 10px 0px;
@@ -92,27 +65,8 @@ input:focus {
   background-color: #ffd2d2;
 }
 
-h1, h2, h3 {
-  line-height: 1.2;
-  font-family: "Lora";
-}
-
-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-a {
-  color: #3297d3;
-}
-a:hover {
-  text-decoration: none;
-}
-
-pre {
-  font-family: "Inconsolata", monospace;
+.timestamp {
+  color: #333333;
 }
 
 /*# sourceMappingURL=light.css.map */
