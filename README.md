@@ -1,12 +1,11 @@
-Share an Org buffer as a web page. In addition, a URL will be created that you can share to view it.
+Share an org buffer as an accessible web page with your own public domain.
 
 ![Demo](demo.gif)
 
 ## Requirements
 
-- **Domain**: To access the file share.
-- **Hosting**: To host the file share. It is recommended to use a server with SSH access.
-- **TRAMP**: To access the hosting.
+- **Domain**
+- **Hosting**: It is recommended to use a server with SSH access.
 
 ## Install
 
@@ -54,6 +53,7 @@ If you want it to look really nice, include the following lines at the beginning
 #+html_head: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap">
 #+html_head: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tanrax/org-share-to-web.el@main/themes/light.css">
 #+OPTIONS: toc:nil num:nil html-postamble:nil
+#+TITLE: My title
 ```
 
 ### Dark
@@ -63,4 +63,5 @@ If you want it to look really nice, include the following lines at the beginning
 #+html_head: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap">
 #+html_head: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tanrax/org-share-to-web.el@main/themes/dark.css">
 #+OPTIONS: toc:nil num:nil html-postamble:nil
+#+TITLE: My title
 ```
